@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono&display=swap');
 /* font-family: 'Dancing Script', cursive;
 font-family: 'Roboto Mono', monospace; */
-
-
-body {
+*{
     margin: 0;
     padding: 0;
-    background: #fdfdfd;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
     font-family: 'Dancing Script', cursive;
+    overflow-x: hidden;
 }
 h1{
     color: rgb(3, 247, 206);
@@ -41,7 +44,7 @@ h1{
 }
 
 #mainNavbar .nav-link {
-    color: #21881eaf;
+    color: #e2e614ad;
 }
 
 #mainNavbar .nav-link:hover {
@@ -49,33 +52,36 @@ h1{
 }
 
 #mainNavbar .navbar-brand {
-    color: #EA1C2C;
+    color: #06f812;
     font-size: 1.5rem;
 }
 
 #headingGroup span {
-    color: #00fc4c;
+    color: #04fd4e;
 }
 
 #headingGroup h1 {
     font-weight: 100;
-    font-size: 4rem;
-}
+    font-size: 3rem;
 
+}
+.navbar-toggler{
+    background-color: rgba(67, 68, 67, 0.925);
+}
 .navbar.scrolled {
-    background: rgb(6, 245, 106);
+    background: rgb(91, 109, 99);
     transition: background 500ms;
 }
 
 .footer{
     font-family: 'Roboto Mono', monospace;
     min-height: 30vh;
-    background-color: rgb(6, 245, 106);
+    background-color: rgb(91, 109, 99);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: rgb(245, 9, 9);
+    color: rgb(211, 202, 202);
 }
 .footer-container{
 display: flex;
@@ -96,7 +102,7 @@ width: 800px;
 @media (max-width: 1200px) {
     #headingGroup h1 {
         font-weight: 100;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .blurb h2 {
         font-size: 2rem;
@@ -109,6 +115,14 @@ width: 800px;
    }
 }
 @media (max-width: 550px) {
+    .navbar-toggler{
+        position: absolute;
+        top: 5px;
+        right: 100px;
+    }
+    #mainNavbar .nav-link {
+        background-color: rgba(0, 0, 0, 0.384);
+    }
     .footer-container{
         justify-content: center;
         margin-top: 50px;
